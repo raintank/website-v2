@@ -5,6 +5,25 @@ description = "March 2016 raintank Newsletter"
 tags = [ "raintank", "March", "2016", "newsletter" ]
 section = ["newsletter"]
 +++
+<style>
+p.last { margin: 50px 0;
+ }
+td div {
+	border-left: 5px solid #d5d5d5; 
+	padding: 10px 20px; 
+	margin-top:20px;
+}
+@media (max-width: 450px) {
+    td {
+       display: block;
+       width: 100%;
+    }
+    td div {
+    	border-left: none;
+    	padding: 0;
+    	margin-top: 0;
+    }
+</style>
 
 <!-- Hero
 ================================================== -->
@@ -33,12 +52,11 @@ section = ["newsletter"]
 			<h3> Grafana 3.0</h3>
 			<p>I'm very excited that Grafana 3.0 is almost ready! The weeks of 18hr days refactoring code were tough, but the beta is planned to be released in the next few weeks.</p>
 
-			<p style"margin-bottom:50px;">A key improvement is a totally revamped <a href="https://github.com/grafana/grafana-plugins">plugin architecture</a> -- we want to make it easy for the community to discover and create new Data Sources, Panels, Dashboards, and even entire Applications for Grafana.</p>
-			<div style="margin-bottom:30px;"></div>
+			<p>A key improvement is a totally revamped <a href="https://github.com/grafana/grafana-plugins">plugin architecture</a> -- we want to make it easy for the community to discover and create new Data Sources, Panels, Dashboards, and even entire Applications for Grafana.</p>
 			</td>
 			<td width="2%">&nbsp;</td>
 			<td align="center" valign="top" width="25%">
-				<div style="border-left: 5px solid #d5d5d5; padding: 10px 20px; margin-top:20px;">		
+				<div>		
 					<img style="border-radius:50%; display:block;" width="80" src="/img/torkel-sq.png" alt="torkel ödegaard">
 					<p><strong>Torkel Ödegaard</strong><br/>Co-founder, Creator of Grafana</p>
 				</div>
@@ -51,12 +69,11 @@ section = ["newsletter"]
 
 			<p>We've spent a lot of time this year thinking about our product names, and our Litmus app is being renamed to worldPing. We think it is a better, and more self descriptive name for monitoring global network performance.</p>
 
-			<p style"margin-bottom:50px;">With the upcoming Grafana 3.0 release, you'll be able to install worldPing (and a slew of other upcoming apps) into your existing Grafana.</p>
-			<div style="margin-bottom:30px;"></div>
+			<p>With the upcoming Grafana 3.0 release, you'll be able to install worldPing (and a slew of other upcoming apps) into your existing Grafana.</p>
 			</td>
 			<td width="2%">&nbsp;</td>
 			<td align="center" valign="top" width="25%">
-				<div style="border-left: 5px solid #d5d5d5; padding: 10px 20px; margin-top:20px;">		
+				<div>		
 					<img style="border-radius:50%; display:block;" width="80" src="/img/raj-sq.png" alt="raj dutt">
 					<p><strong>Raj Dutt</strong><br/>Co-founder</p>
 				</div>
@@ -71,12 +88,11 @@ section = ["newsletter"]
 
 			<p>For those interested, <a href="https://github.com/raintank/raintank-metric/tree/master/metric_tank">all code is on Github</a> and keep an eye out for a technical blog post with more details.</p>
 
-			<p style"margin-bottom:50px;">Between the 17th-21st of February we were scaling out the platform and ran into some into some issues. We couldn't do it without some data loss, so you may see some gaps during that timeframe. I'm sorry about that. We're working on raising the bar and when we become GA we'll have proper incident and status communication in place.</p>
-			<div style="margin-bottom:30px;"></div>
+			<p>Between the 17th-21st of February we were scaling out the platform and ran into some into some issues. We couldn't do it without some data loss, so you may see some gaps during that timeframe. I'm sorry about that. We're working on raising the bar and when we become GA we'll have proper incident and status communication in place.</p>
 			</td>
 			<td width="2%">&nbsp;</td>
 			<td align="center" valign="top" width="25%">
-				<div style="border-left: 5px solid #d5d5d5; padding: 10px 20px; margin-top:20px;">		
+				<div>		
 					<img style="border-radius:50%; display:block;" width="80" src="/img/dieter-sq.png" alt="Dieter Plaetinck">
 					<p><strong>Dieter Plaetinck</strong><br/>Principal Engineer, metrics 2.0 rockstar</p>
 				</div>
@@ -91,18 +107,10 @@ section = ["newsletter"]
 
 			<p>By adding the raintank datasource to your existing Grafana, you can visualize and correlate worldPing data with your own. It only takes a minute. <A href="http://www.raintank.io/docs/litmus/raintank-datasource/">Here's how</A>.</p>
 
-			<h3> How do you compare?</h3>
-
-			<p>One of the biggest challenges for new worldPing users was allowing them to see the power of the system, but when you add a new endpoint, you only see 10 seconds of data, then 20 seconds, etc. To help show the power of worldPing initially, and then have a valuable long-term comparison point, we added a public endpoint to every account.</p>
-
-			<p>Your worldPing account now comes with a new "public" endpoint named <strong>~google_com_demo</strong>. It's pretty useful in helping baseline and compare your own performance along side one of the best performing sites in the world. We think the <a href="https://app.raintank.io/dashboard/file/rt-endpoint-comparison.json?var-endpoint=~google_com_demo">"Endpoint: Comparison" dashboard</a> provides good visualizations around this.</p>
-
-			<p style"margin-bottom:50px;">Best of all, this public endpoint will always be free, even after early access.</p>
-			<div style="margin-bottom:30px;"></div>
 			</td>
 			<td width="2%">&nbsp;</td>
 			<td align="center" valign="top" width="23%">
-				<div style="border-left: 5px solid #d5d5d5; padding: 10px 20px; margin-top:20px;">		
+				<div>		
 					<img style="border-radius:50%; display:block;" width="80" src="/img/matt-sq.png" alt="Matt Toback">
 					<p><strong>Matt Toback</strong><br/>VP Customer Experience, Visiting Perth and thinks it's awesome</p>
 				</div>
@@ -117,12 +125,11 @@ section = ["newsletter"]
 
 			<p>The <a href="https://app.raintank.io/dashboard/file/rt-endpoint-ping.json">Ping dashboard</a> has also been redesigned to better convey latency and packet loss.</p>
 
-			<p style"margin-bottom:50px;">We've also added custom timeout controls for individual Ping, DNS, HTTP and HTTPS checks. <a href="https://app.raintank.io/endpoints/new">Add a new endpoint</a> or configure an existing endpoint to check it out.</p>
-			<div style="margin-bottom:30px;"></div>
+			<p>We've also added custom timeout controls for individual Ping, DNS, HTTP and HTTPS checks. <a href="https://app.raintank.io/endpoints/new">Add a new endpoint</a> or configure an existing endpoint to check it out.</p>
 			</td>
 			<td width="2%">&nbsp;</td>
 			<td align="center" valign="top" width="23%">
-				<div style="border-left: 5px solid #d5d5d5; padding: 10px 20px; margin-top:20px;">		
+				<div>		
 					<img style="border-radius:50%; display:block;" width="80" src="/img/anthony-sq.png" alt="Anthony Woods">
 					<p><strong>Anthony Woods</strong><br/>Co-founder, lives in Perth. Doesn't think it's as exciting as Matt does</p>
 				</div>
@@ -135,12 +142,11 @@ section = ["newsletter"]
 
 			<p>As proud as we are of our interface design, there's always room for improvement. In the upcoming Grafana 3.0, as well as the worldPing interface, you'll see that we've taken great care in making the UI more clean, intuitive and beautiful for both the light and dark themes.</p>
 
-			<p style="margin-bottom: 50px;">We've been designing additional interface icons, choosing new fonts that are readable even at small sizes, and cleaned up the color palette so the interface can get out of your way, and your data can take center stage. And we're not stopping there; many more improvements and surprises are in store over the coming weeks.</p>
-			<div style="margin-bottom:30px;"></div>
+			<p>We've been designing additional interface icons, choosing new fonts that are readable even at small sizes, and cleaned up the color palette so the interface can get out of your way, and your data can take center stage. And we're not stopping there; many more improvements and surprises are in store over the coming weeks.</p>
 			</td>
 			<td width="2%">&nbsp;</td>
 			<td align="center" valign="top" width="23%">
-				<div style="border-left: 5px solid #d5d5d5; padding: 10px 20px; margin-top:20px;">		
+				<div>		
 					<img style="border-radius:50%; display:block;" width="80" src="/img/trent-sq.png" alt="Trent White">
 					<p><strong>Trent White</strong><br/>VP, Marketing and Design</p>
 				</div>
@@ -148,7 +154,7 @@ section = ["newsletter"]
 		</tr>
 		<tr>
 			<td colspan="3">
-			<p style"margin-bottom:50px;">As always, a sincere thank you for the continued feedback and support during our early access period. Talk soon!</p>
+			<p class="last">As always, a sincere thank you for the continued feedback and support during our early access period. Talk soon!</p>
 			<br/>
 			<p>Sincerely,</p>
 			<h4><em>the raintank team</em></h4>
