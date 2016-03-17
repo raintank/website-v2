@@ -10,6 +10,12 @@ title = "raintank"
 
 
 [[menu.main]]
+    name = "Grafana.net"
+    weight = -110
+    identifier = "grafana-net"
+    url = "http://grafana.net"
+
+[[menu.main]]
     name = "about"
     weight = -110
     identifier = "about"
@@ -36,14 +42,6 @@ title = "raintank"
     url = "/about/join"
     parent = "about"
 
-[[menu.main]]
-    name = "100% open source"
-    weight = -80
-    indentifier = "opensource"
-    url = "/about/open-source"
-    parent = "about"
-
-
 
 [[menu.main]]
     name = "grafana"
@@ -54,38 +52,24 @@ title = "raintank"
 
 
 [[menu.main]]
+    name = "Software"
+    weight = -90
+    identifier = "software"
+    url = "/software/"
+
+[[menu.main]]
     name = "worldPing"
     weight = -110
-    identifier = "worldPing"
-    url = "/worldping/"
+    identifier = "worldping"
+    url = "http://worldping.com"
+    parent = "software"
 
 [[menu.main]]
-    name = "what is worldPing?"
-    weight = -110
-    identifier = "what"
-    url = "/worldping/"
-    parent = "worldPing"
-
-[[menu.main]]
-    name = "use cases"
+    name = "Grafana"
     weight = -100    
-    identifier = "usecases"
-    url = "/worldping/use-cases"
-    parent = "worldPing"
-
-[[menu.main]]
-    name = "road map"
-    weight = -60    
-    identifier = "roadmap"
-    url = "/worldping/road-map/"
-    parent = "worldPing"
-
-[[menu.main]]
-    name = "faq"
-    weight = -80
-    indentifier = "faq"
-    url = "/worldping/faq"
-    parent = "worldPing"
+    identifier = "grafana"
+    url = "http://grafana.org"
+    parent = "software"
 
 
 [[menu.main]]
@@ -94,10 +78,3 @@ title = "raintank"
     identifier = "blog"
     url = "http://blog.raintank.io"
 
-
-
-[[menu.main]]
-    name = "docs"
-    weight = -40
-    identifier = "docs"
-    url = "/docs/"    
