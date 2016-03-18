@@ -30,28 +30,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 			          {{ if .HasChildren }}
 			            <li class="dropdown{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
-			            <a href="{{.URL}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ .Name }}<span class="caret"></span></a>
-			            <ul class="dropdown-menu" role="menu">
-			                {{ range .Children }}
-			                <li>
-			                	<a href="{{.URL}}"> {{ .Name }}</a>
-			                </li>
-			                {{ end }}
-			            </ul>
-
+				            <a href="{{.URL}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ .Name }}<span class="caret"></span></a>
+				            <ul class="dropdown-menu dropdown-menu-left" role="menu">
+				                {{ range .Children }}
+				                <li>
+				                	<a href="{{.URL}}"> {{ .Name }}</a>
+				                </li>
+				                {{ end }}
+				            </ul>
+				        </li>    
 			          {{else}}
 			            <li class="{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
 			            	<a href="{{.URL}}">{{ .Name }}</a>
+			           </li>
 			          {{end}}
-			          </li>
 			          {{end}}
-		
-						<li class="navbar-social">
+						<!-- <li class="navbar-social">
 							<a class="twitter" href="http://twitter.com/raintanksaas">Twitter</a>
 						</li>
 						<li class="navbar-social">
 							<a class="github" href="http://github.com/raintank">Github</a>
-						</li>
+						</li> -->
 			        </ul>
 			       
 					<!-- <div class="nav-btn"><a class="navbar-right signInCTA" href="http://app.raintank.io">Sign In</a></div>
