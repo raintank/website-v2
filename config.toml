@@ -52,7 +52,7 @@ title = "raintank"
 
 
 [[menu.main]]
-    name = "Software"
+    name = "software"
     weight = -90
     identifier = "software"
     url = "/software/"
