@@ -32,36 +32,35 @@ html {
 }
 
 .home-hero{
-  background: url(/img/new_hero_dashboard_bg.jpg);
+  background: linear-gradient(135deg,hsla(0,0%,4%,.51),rgba(46,46,46,0) 75%),linear-gradient(90deg,hsla(0,0%,4%,.41) 0,rgba(46,46,46,0) 75%) , url(/img/new_hero_dashboard_bg.jpg) no-repeat;
+  box-shadow: inset 100px 100px 260px -70px @black;
   background-size: cover;
-  background-position: 50%;
-  // background-attachment: fixed;
+  background-position: center;
 }
 
 .scatter-hero{
   background: @gray-base url(/img/scatterplot.png);
   background-size: cover;
   background-position: center center;
-  // background-attachment: fixed;
 }
 
 .about-hero{
-  background: @gray-base url(/img/democratize-bg.png);
+  background: linear-gradient(135deg,hsla(0,0%,4%,.51),rgba(46,46,46,0) 75%),linear-gradient(90deg,hsla(0,0%,4%,.41) 0,rgba(46,46,46,0) 75%) , url(/img/democratize-bg.png) no-repeat;
+  box-shadow: inset 100px 100px 260px -70px @black;
   background-size:cover;
   background-position: top left;
-  // background-attachment: fixed;
 }
 
 .grafana-hero{
-  background: @gray-base url(/img/grafana_hero_bg.jpg);
+  background: linear-gradient(135deg,hsla(0,0%,4%,.51),rgba(46,46,46,0) 75%),linear-gradient(90deg,hsla(0,0%,4%,.41) 0,rgba(46,46,46,0) 75%) , url(/img/grafana_hero_bg.jpg) no-repeat;
+  box-shadow: inset 100px 100px 260px -70px @black;
   background-size: cover;
   background-position: bottom;
-  // background-attachment: fixed;
 }
 
 .litmus-hero{
-  background: @gray-base url(/img/new_hero_dashboard_bg.jpg);
-  // background-attachment: fixed !important;
+  background: linear-gradient(135deg,hsla(0,0%,4%,.51),rgba(46,46,46,0) 75%),linear-gradient(90deg,hsla(0,0%,4%,.41) 0,rgba(46,46,46,0) 75%) , url(/img/new_hero_dashboard_bg.jpg) no-repeat;
+  box-shadow: inset 100px 100px 260px -70px @black;
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
@@ -366,7 +365,21 @@ input[type="checkbox"]{
   }
 }
 
-/* FOOTER */
+
+/* FOOTER
+------------------------- */
+
+footer {
+  background-color: @gray-base;
+  min-height:320px;
+  color:@gray-lighter;
+  font-size: @font-size-small;
+}
+
+footer .row {margin-bottom:40px;}
+footer ul {list-style: none; padding-left:0; margin-bottom:20px;}
+footer a {color:@white;}
+footer a.contact {color:@brand-primary;}
 .footer-content-container {
   .container-fixed();
   position:relative;
@@ -411,6 +424,19 @@ input[type="checkbox"]{
   }
 }
 
+.footer-social {
+  display: inline;
+  margin-left: 20px;
+  & a { 
+    opacity: 0.8;
+    & img {
+      width: 24px;
+    }
+  }
+  & a:hover {
+    opacity: 1;
+  }
+}
 
 
 /* CALLOUT BLOCKS
@@ -553,6 +579,16 @@ p {margin-bottom:30px;}
 
 /* Featurettes
 ------------------------- */
+
+.featurette {
+  margin-bottom:40px; 
+  min-height:400px;
+  
+  & h3 a {
+    color: @gray-lighter;
+  }
+}
+
 .featureFlag {
   padding-top: 160px;
   height: 30px;
@@ -684,6 +720,7 @@ p {margin-bottom:30px;}
 ------------------------- */
 .page-nav-container {
   background-color: @black;
+  border-top: 1px solid lighten(@body-bg, 2%);
 }
 //mobile first
 .page-nav { 
@@ -771,21 +808,6 @@ ul.opensource-beliefs {
     margin-left: 70px;
   }   
 }
-
-/* FOOTER
-------------------------- */
-
-footer {
-  background-color: @gray-base;
-  min-height:320px;
-  color:@gray-lighter;
-  font-size: @font-size-small;
-}
-
-footer .row {margin-bottom:40px;}
-footer ul {list-style: none; padding-left:0; margin-bottom:20px;}
-footer a {color:@white;}
-footer a.contact {color:@brand-primary;}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
