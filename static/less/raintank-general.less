@@ -26,6 +26,11 @@ html {
   background-color:@gray-base;
 }
 
+.hero-interior {
+  height:300px;
+  overflow: hidden;
+}
+
 .inner{
   height: auto;
   position: relative;
@@ -755,7 +760,7 @@ p {margin-bottom:30px;}
 
 .page-nav > li {
   display: block;
-  border-bottom: 1px solid @gray-lighter;
+  border-bottom: 1px solid @gray-darker;
   margin: 0 -15px;
 }
 
@@ -768,6 +773,8 @@ p {margin-bottom:30px;}
 
   &.active {
     background-color: transparent;
+    color: @white;
+    font-weight: 700;
     border-bottom: 1px solid @brand-primary;
     // border-top-left-radius: 0;
     // border-top-right-radius: 0;
