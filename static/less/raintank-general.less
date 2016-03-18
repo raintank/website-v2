@@ -153,14 +153,17 @@ html {
 }
 
 .navbar-social {
-  & li {
-    float: left;
-    list-style: none;
-    background-color: #000;
+  @media (min-width: @screen-md-min) {
+    height: 100px;
   } 
-  & a.twitter, a.github {
-      text-indent: -9999px;
-      background-color: transparent !important;
+  & a { 
+    opacity: 0.8;
+    & img {
+      width: 24px;
+    }
+  }
+  & a:hover {
+    opacity: 1;
   }
 }
 
