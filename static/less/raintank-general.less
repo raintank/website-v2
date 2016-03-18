@@ -152,6 +152,18 @@ html {
   max-width: 1080px;
 }
 
+.navbar-social {
+  & li {
+    float: left;
+    list-style: none;
+    background-color: #000;
+  } 
+  & a.twitter, a.github {
+      text-indent: -9999px;
+      background-color: transparent !important;
+  }
+}
+
 /* CONTAINER ADJUSTMENTS FOR WIDTH AND OFFSET
 -------------------------------------------------- */
 /* HERO */
@@ -373,6 +385,26 @@ input[type="checkbox"]{
     width: (calc(@container-lg - 200px));
     padding-left: @grid-gutter-width;
     padding-right: @grid-gutter-width;
+  }
+}
+
+.footer-nav{
+  & li {
+    font-weight: 700;
+    @media (min-width: @screen-sm-min) {
+      float: none;
+      margin-bottom: 10px;
+    }
+    @media (min-width: @screen-md-min) {
+      display: block;
+      float: left;
+      margin: 0 10% 0 0;
+    }
+  }  
+  & li li {
+    float: none;
+    width: 100%;
+    font-weight: 400;
   }
 }
 
