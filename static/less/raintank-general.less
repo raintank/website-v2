@@ -647,7 +647,7 @@ p {margin-bottom:30px;}
     position: relative;
   }
   min-height:180px;
-  
+
   @media (min-width: @screen-md) { 
     margin-bottom:40px;
 
@@ -668,7 +668,7 @@ p {margin-bottom:30px;}
 }
 
 .join-benefits-row {
-  border-bottom: 1px solid #d6d6d6;
+  border-bottom: 1px solid lighten(@body-bg, 10%);
 
   &:last-child {
     border-bottom: 0;
@@ -682,7 +682,7 @@ p {margin-bottom:30px;}
   padding-bottom: 30px;
 
   &:nth-child(odd) {
-    border-bottom: 1px solid #d6d6d6;
+    border-bottom: 1px solid lighten(@body-bg, 10%);
   }
 
   @media (min-width: @screen-sm) {
@@ -691,7 +691,7 @@ p {margin-bottom:30px;}
 
     &:nth-child(odd) {
       padding-right: 20px;
-      border-right: 1px solid #d6d6d6;
+      border-right: 1px solid lighten(@body-bg, 10%);
       border-bottom: 0;
     }
 
@@ -723,6 +723,7 @@ p {margin-bottom:30px;}
 
 .join-benefits-title {
   font-weight: 400;
+  color: @white;
 }
 
 /* Testimonials
