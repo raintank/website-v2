@@ -61,7 +61,7 @@ title = "raintank"
     name = "worldPing"
     weight = -110
     identifier = "worldping"
-    url = "http://worldping.com"
+    url = "#"
     parent = "software"
 
 [[menu.main]]
