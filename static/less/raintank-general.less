@@ -31,6 +31,7 @@ html {
   overflow: hidden;
 }
 
+
 .inner{
   height: auto;
   position: relative;
@@ -121,6 +122,7 @@ html {
   -webkit-background-clip: text;
  }
 
+
  .secondary-icon {
   color: @gray-light;
  }
@@ -184,6 +186,7 @@ html {
     padding-bottom:40px;
     & h1, h2, h3, h4 {
      color: @white;
+     opacity: 0.85;
      text-shadow: @carousel-text-shadow;
     }
 
@@ -205,7 +208,7 @@ html {
     padding-right: @grid-gutter-width;
 
      .hero-caption {
-      padding-bottom:150px;
+      // padding-bottom:150px;
 
       & h1 {
       font-size: @font-size-h1;
@@ -233,7 +236,7 @@ html {
      width: (@container-lg);
 
     .hero-caption {
-      padding-bottom:150px;
+      // padding-bottom:150px;
       & h1 {
       font-size: @font-size-h1; 
       margin-bottom:30px;
@@ -242,50 +245,26 @@ html {
   }
 }
 
-/* MEDIA CAROUSEL */
-.carousel-content-container {
-  .container-fixed();
-    @media (min-width: @screen-sm-min) {
-  }
-      @media (min-width: @screen-md-min) {
-  }
-      @media (min-width: @screen-lg-min) {
-  }
-}
 
-.screenshot-content-container {
-  .container-fixed();
-  position:relative;
-  @media (min-width: @screen-sm-min) {
-    width: (@container-sm);
-  }
-
-  @media (min-width: @screen-md-min) {
-
-    width: (@container-md);
-  }
-
-  @media (min-width: @screen-lg-min) {
-     width: (@container-lg);
-  }
-
-}
 
 input {
-    height: 36px;
-    border-radius: @border-radius-base;
-    border: 1px solid @gray-light;
-    position: relative;
-    top: -4px;
-    width: 240px;
-    margin-right: 10px;
-    padding: 0 10px;
-    color: @gray-base;
+  height: 36px;
+  border-radius: @border-radius-base;
+  border: 1px solid @gray-light;
+  position: relative;
+  top: -4px;
+  width: 240px;
+  margin-right: 10px;
+  padding: 0 10px;
+  color: @gray-base;
 }
+
 input[type="checkbox"]{
   height: auto;
   vertical-align:bottom;
 }
+
+
 
 /* MAIN CONTENT */
 .main-content-container {
@@ -444,6 +423,7 @@ footer a.contact {color:@brand-primary;}
 }
 
 
+
 /* CALLOUT BLOCKS
 -------------------------------------------------- */
 .calloutBlock {
@@ -572,22 +552,15 @@ p {margin-bottom:30px;}
 
 }
 
-/* MARKETING CONTENT
--------------------------------------------------- */
 
-/* Center align the text within the three columns below the carousel  */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.marketing h2 {
-  // font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
+.section {
+  position: relative;
+  min-height: 200px;
+  margin: 50px 0;
+  padding: 0 15px;
 
+  & p {margin-bottom:20px;}
+} 
 
 /* Featurettes
 ------------------------- */
@@ -645,7 +618,9 @@ p {margin-bottom:30px;}
 
 &.reverse, &.reverse::after {    
     color: @white;
-    background: @white;}
+    background: @white;
+  }
+
 
 .opensource {
   & a {
@@ -659,7 +634,6 @@ p {margin-bottom:30px;}
     & a {
     position: absolute;
     bottom: 0;
-    right: 25%;
     }
   }
 }
@@ -768,13 +742,13 @@ p {margin-bottom:30px;}
   text-align:center;
   display: block;
   padding: 18px 30px 13px;
-  color: @gray-lighter;
+  color: @gray-light;
   font-size: 16px;
 
   &.active {
     background-color: transparent;
     color: @white;
-    font-weight: 700;
+    font-weight: 400;
     border-bottom: 1px solid @brand-primary;
     // border-top-left-radius: 0;
     // border-top-right-radius: 0;
@@ -857,5 +831,5 @@ ul.opensource-beliefs {
 .alpha-heading {font-weight: 400; line-height:1.3;}
 .beta-heading {font-weight: 400; line-height:1.3; margin-bottom: 20px;}
 .sub-heading {font-weight: 600; font-size: 16px;}
-
 .text-faded {color: @gray-lighter;}
+.text-light {color: @text-reverse;}
