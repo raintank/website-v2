@@ -78,3 +78,9 @@ title = "raintank"
     identifier = "blog"
     url = "http://blog.raintank.io"
 
+[[menu.main]]
+    name = "press"
+    weight = -60
+    identifier = "press"
+    url = "/press/"
+
