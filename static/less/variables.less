@@ -8,7 +8,7 @@
 //## Gray and brand colors for use across Bootstrap.
 
 @black:					 #000;
-@gray-base:              #161616;
+@gray-base:              #262626;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
 @gray-dark:              lighten(@gray-base, 20%);   // #333
 @gray:                   lighten(@gray-base, 33.5%); // #555
@@ -44,9 +44,9 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               @white;
+@body-bg:               @gray-base;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @gray-light;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -97,6 +97,7 @@
 @headings-font-weight:    400;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
+@headings-font-style: 	  normal;
 
 
 //== Iconography
@@ -254,7 +255,7 @@
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-@dropdown-bg:                    rgba(0,0,0, 0.7);
+@dropdown-bg:                    rgba(0,0,0, 0.3);
 //** Dropdown menu `border-color`.
 @dropdown-border:                none;
 //** Dropdown menu `border-color` **for IE8**.
@@ -420,7 +421,7 @@
 // Reset inverted navbar basics
 @navbar-inverse-color:                      @white;
 @navbar-inverse-link-weight:         		400;
-@navbar-inverse-bg:                         rgba(0,0,0, 0.7);
+@navbar-inverse-bg:                         rgba(0,0,0, 0.3);
 @navbar-inverse-border:                     transparent;
 
 // Inverted navbar links

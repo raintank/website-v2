@@ -1,42 +1,47 @@
-  <!-- FOOTER -->
-  <footer>
-   <div class="footer-content-container">
-     <div class="row">
-      <div class="col-xs-7 col-sm-9 col-md-9">
-        <div class="row">
-          <div class="col-xs-12 col-sm-3 col-md-3">
-            <ul>
-               <li class="title">about</li>
-               <li><a href="/about/">the vision</a></li>
-               <li><a href="/about/team">the team</a></li>
-               <li><a href="/about/join">work with us</a></li>
-               <li><a href="/about/open-source">100% open source</a></li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-3 col-md-3">
-            <ul>
-              <li class="title"><a href="/grafana/">grafana</a></li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-3 col-md-3">
-            <ul>
-               <li class="title">worldPing</li>
-               <li><a href="/worldping/">what is worldPing?</a></li>
-               <li><a href="/worldping/use-cases">use cases</a></li>
-               <li><a href="/worldping/road-map">road map</a></li>
-               <li><a href="/worldping/faq">faq</a></li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-3 col-md-3">
-            <ul>
-              <li class="title"><a href="http://blog.raintank.io">blog</a></li>
-            </ul>
-          </div>
-        </div>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content-container">
+   <hr class="section-divider" /><br/>
+    <div class="row">
+      <div class="col-xs-9">
+        <ul class="footer-nav">
+          {{ $currentNode := . }}
+          {{ range .Site.Menus.main }}
+
+          {{ if .HasChildren }}
+            <li>
+              <a href="{{.URL}}">{{ .Name }}</a>
+              <ul>
+                  {{ range .Children }}
+                  <li>
+                    <a href="{{.URL}}"> {{ .Name }}</a>
+                  </li>
+                  {{ end }}
+              </ul>
+              </li>
+          {{else}}
+            <li class="{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
+              <a href="{{.URL}}">{{ .Name }}</a>
+            </li>  
+          {{end}}
+          {{end}}
+           <li class="main">
+              <a href="/resources/press">press</a>
+            </li>  
+        </ul>
       </div>
-      <div class="col-xs-5 col-sm-3 col-md-3">
+
+      <div class="col-xs-3">
         <div class="row">
           <div class="col-xs-12 col-md-12">
+            <ul class="text-right">
+              <li class="footer-social">
+                  <a href="http://github.com/raintank" alt="Follow us on Github" title="Follow us on Github"><img src="/img/github-icon.svg" /></a>
+              </li>
+              <li class="footer-social">
+                <a href="http://twitter.com/raintanksaas" alt="Follow us on Twitter" title="Follow us on Twitter"><img src="/img/twitter-icon.svg" /></a>
+              </li>              
+            </ul>
             <ul class="text-right">
               <li><span class="title">e:</span> <a href="mailto:hello@raintank.io" class="contact">hello@raintank.io</a></li>
               <li><span class="title">p:</span> 212.812.4179</li>
@@ -56,8 +61,9 @@
         <p>&copy; 2016 raintank inc.</p>
       </div>
     </div>
-   </div>
-  </footer>
+  </div>
+</footer>
+
 
   <!-- Bootstrap core JavaScript
     ================================================== -->

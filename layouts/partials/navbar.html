@@ -11,9 +11,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TJGF9R');</script>
 <!-- End Google Tag Manager -->
+
 	<div class="navbar-wrapper">
 		<nav class="navbar navbar-inverse"> <!-- removed navbar-fixed-top so it was not persistent -->
-			<div class="container-fluid">
+			<div class="container-fluid" >
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 						<span class="sr-only">Toggle navigation</span>
@@ -24,31 +25,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<a class="navbar-brand" href="/"><i class="main-logo icon-rt-raintank_wordmark"></i></a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav navbar-right">
 			          {{ $currentNode := . }}
 			          {{ range .Site.Menus.main }}
 
 			          {{ if .HasChildren }}
 			            <li class="dropdown{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
-			            <a href="{{.URL}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ .Name }}<span class="caret"></span></a>
-			            <ul class="dropdown-menu" role="menu">
-			                {{ range .Children }}
-			                <li>
-			                	<a href="{{.URL}}"> {{ .Name }}</a>
-			                </li>
-			                {{ end }}
-			            </ul>
-
+				            <a href="{{.URL}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ .Name }}<span class="caret"></span></a>
+				            <ul class="dropdown-menu dropdown-menu-left" role="menu">
+				                {{ range .Children }}
+				                <li>
+				                	<a href="{{.URL}}"> {{ .Name }}</a>
+				                </li>
+				                {{ end }}
+				            </ul>
+				        </li>    
 			          {{else}}
 			            <li class="{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
 			            	<a href="{{.URL}}">{{ .Name }}</a>
+			           </li>
 			          {{end}}
-			          </li>
 			          {{end}}
+			           <li class="navbar-social">
+					       <a href="http://github.com/raintank"  alt="Follow us on Github" title="Follow us on Github"><img src="/img/github-icon.svg" /></a>
+					   </li>
+					   <li class="navbar-social">
+						   <a href="http://twitter.com/raintanksaas"  alt="Follow us on Twitter" title="Follow us on Twitter"><img src="/img/twitter-icon.svg" /></a>
+					   </li>
 			        </ul>
-			        
-					<div class="nav-btn"><a class="navbar-right signInCTA" href="http://app.raintank.io">Sign In</a></div>
-					<div class="nav-btn"><button class="navbar-right signUpCTA" data-toggle="modal" data-target="#signUp">Sign Up</button></div>
+			       
+					<!-- <div class="nav-btn"><a class="navbar-right signInCTA" href="http://app.raintank.io">Sign In</a></div>
+					<div class="nav-btn"><button class="navbar-right signUpCTA" data-toggle="modal" data-target="#signUp">Sign Up</button></div> -->
 				</div><!--/.nav-collapse -->
 			</div>
 		</nav>
