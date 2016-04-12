@@ -95,11 +95,11 @@ description = "about the raintank vision"
       </div>
       <div class="col-md-6 opensource">
         <h3><img src="/img/grafana_icon_lockup.svg" width="300"/></h3>
-        <a class="btn specialCTA"  style="margin-top:20px;" href="http://github.com/grafana/grafana/" target="_blank" role="button">Grafana On Github</a>
+        <a class="btn specialCTA" onClick="ga('send', 'event', { eventCategory: 'Button', eventAction: 'About Page-Grafana', eventLabel: 'Clicked'});" style="margin-top:20px;" href="http://github.com/grafana/grafana/" target="_blank" role="button">Grafana On Github</a>
       </div>
       <div class="col-md-6 opensource">
         <h3><img src="/img/worldping_icon_lockup.svg" width="300"/></h3>
-        <a class="btn specialCTA" style="margin-top:20px;" href="https://github.com/raintank/worldping-app" target="_blank" role="button">worldPing on Github</a>
+        <a class="btn specialCTA" onClick="ga('send', 'event', { eventCategory: 'Button', eventAction: 'About Page-worldPing', eventLabel: 'Clicked'});" style="margin-top:20px;" href="https://github.com/raintank/worldping-app" target="_blank" role="button">worldPing on Github</a>
       </div>   
     </div>
   </div> <!-- section -->
@@ -108,7 +108,7 @@ description = "about the raintank vision"
 <div class="calloutBlock dark">
   <div class="content-row">
     <h3>sound interesting? we'd love to chat.</h3>
-    <p><a class="btn specialCTA" href="mailto:hello@raintank.io" role="button">contact us</a></p>
+    <p><a href="mailto:hello@raintank.io" onClick="ga('send', 'event', { eventCategory: 'Button', eventAction: 'About Page-Contact', eventLabel: 'Clicked'});" class="btn specialCTA" role="button">contact us</a></p>
   </div>
 </div>
 
