@@ -13,7 +13,7 @@ title = "raintank"
     name = "Grafana.net"
     weight = -110
     identifier = "grafana-net"
-    url = "http://grafana.net"
+    url = "http://grafana.net?utm_source=rt"
 
 [[menu.main]]
     name = "about"
