@@ -44,14 +44,6 @@ title = "raintank"
 
 
 [[menu.main]]
-    name = "grafana"
-    weight = -110
-    identifier = "grafana"
-    url = "/grafana/"
-
-
-
-[[menu.main]]
     name = "software"
     weight = -90
     identifier = "software"
@@ -71,6 +63,25 @@ title = "raintank"
     url = "http://grafana.org"
     parent = "software"
 
+[[menu.main]]
+    name = "resources"
+    weight = -60    
+    identifier = "resources"
+    url = "/resources/" 
+
+[[menu.main]]
+    name = "press"
+    weight = -60    
+    identifier = "press"
+    url = "/resources/press/"
+    parent = "resources"
+
+[[menu.main]]
+    name = "events"
+    weight = -60    
+    identifier = "events"
+    url = "/resources/events/"
+    parent = "resources"
 
 [[menu.main]]
     name = "blog"
