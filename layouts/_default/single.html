@@ -1,6 +1,28 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
 
+{{ if .Params.events }}
+<!-- hack to allow the events pages as partials -->
+<!-- Hero
+================================================== -->
+<section class="hero home-hero">
+	<div class=" hero-content-container inner">
+		<div class="hero-caption">
+			<h1>We love talking about monitoring.</h1>
+		</div>
+	</div>
+</section>
+<!-- Main page content and featurettes
+================================================== -->
+<div class="main-content-container">
+	{{ partial "upcoming-events.html" . }}
+	{{ partial "archive-events.html" . }}
+</div>	
+
+{{ else }}
+<!-- If "page" element isn't defined (only defined on events page) Render content normally -->
 {{ .Content }}
+{{ end }}
+
 
 {{ partial "footer.html" . }}

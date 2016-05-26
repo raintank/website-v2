@@ -6,7 +6,7 @@
 <section class="hero home-hero">
 	<div class="hero-content-container inner">
 		<div class="hero-caption">
-      <h1 class="alpha-heading text-primary">raintank gets open source software ready for the enterprise.</h1>
+      <h1 class="alpha-heading text-primary">raintank gets open source monitoring ready for the enterprise.</h1>
       <!-- <button class="heroCTA jumbo" data-toggle="modal" data-target="#signUp-hero">Get Free Early Access</button> -->
     </div>
 	</div>
@@ -48,89 +48,9 @@ raintank is the company behind <a href="http://grafana.org">Grafana</a>, the def
       <a href="http://worldping.raintank.io" data-gacategory="Button" data-gaaction="worldPing.raintank.io" data-galabel="Homepage" class="specialCTA" style="margin-top:20px;">more about worldPing</a>
     </div>
   </div>
-
-  <br />
-  <br />
-  <div class="page">
-          <div class="row">
-            <div class="col-md-12">
-              <h2>upcoming events</h2>
-            </div>
-          </div>
-
-
-          <div class="event">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="event-img"><a href="http://www.meetup.com/multicloud/events/231239549/"><img src="/img/multi-cloud.jpg" /></a></div>
-              </div>
-              <div class="col-md-8">
-                <p class="event-date"><span class="event-type">Meetup</span> Tel Aviv, Israel | 5.29.16 - 6pm IDT</p>
-                <h3><a href="http://www.meetup.com/multicloud/events/231239549/">Multi-Cloud Engineering Meetup</a></h3>
-                <p><span class="text-light"><strong>Torkel Ödegaard and Raj Dutt: The Art of Visualization</strong></span> This talk will center around the new features of Grafana 3.0 and extending the capabilities of Grafana through new plugins available at <a href="http://grafana.net">Grafana.net</a></p>
-                <a href="http://www.meetup.com/multicloud/events/231239549/" data-gacategory="Button" data-gaaction="Webinar Register" data-galabel="Events" class="specialCTA">register now</a>
-              </div>
-            </div>  
-          </div>
-
-          <div class="event">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="event-img"><a href="http://www.agilasverige.se/"><img src="/img/stockholm.jpg" /></a></div>
-              </div>
-              <div class="col-md-8">
-                <p class="event-date"><span class="event-type">Conference</span> Stockholm, SE | 6.1.16 - 6.2.16</p>
-                <h3><a href="http://www.agilasverige.se/">Agila Sweden</a></h3>
-                <p><span class="text-light"><strong>Carl Berquist: Democratizing Metrics</strong></span> This lightning talk will center around what we mean by "democratizing metrics" and how it drives many of our team's decisions.</p>
-                <a href="http://www.agilasverige.se/" data-gacategory="Button" data-gaaction="Webinar Register" data-galabel="Events" class="specialCTA">register now</a>
-              </div>
-            </div>  
-          </div>
-
-          <div class="event">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="event-img"><a href="http://www.meetup.com/Stockholm-metrics-and-monitoring/events/230920844/"><img src="/img/meetup.jpg" /></a></div>
-              </div>
-              <div class="col-md-8">
-                <p class="event-date"><span class="event-type">Meetup</span> Stockholm, SE | 6.7.16 - 6pm CEST</p>
-                <h3><a href="http://www.meetup.com/Stockholm-metrics-and-monitoring/events/230920844/">Stockholm Metrics and Monitoring</a></h3>
-                <p><span class="text-light"><strong>Torkel Ödegaard: Grafana Master Class</strong></span> Get your PhD in Grafana Studies.</p>
-                <a href="http://www.meetup.com/Stockholm-metrics-and-monitoring/events/230920844/" data-gacategory="Button" data-gaaction="Webinar Register" data-galabel="Events" class="specialCTA">register now</a>
-              </div>
-            </div>  
-          </div>
-
-
-
-          <div class="event">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="event-img"><a href="http://conferences.oreilly.com/velocity/devops-web-performance-ca"><img src="/img/velocity_santa_clara_250.png" /></a></div>
-              </div>
-              <div class="col-md-8">
-                <p class="event-date"><span class="event-type">conference</span> Santa Clara, CA | 6.20.16 - 6.23.16</p>
-                <h3><a href="http://conferences.oreilly.com/velocity/devops-web-performance-ca">Velocity Santa Clara</a></h3>
-                <p><span class="text-light"><strong>Dieter Plaentinck: Next-generation alerting and fault detection.</strong></span> This talk will describe what's wrong with oft-touted complicated alerting methods and instead focus on how to get in-depth coverage and address even complicated alerting needs by simple techniques and focusing on the workflow by using an alerting IDE.</p>
-
-                <p><span class="text-light"><strong>Raj Dutt: Using Grafana and Intel Snap.</strong></span> Raj will be speaking about Grafana 3.0, and using Grafana's Intel Snap Data Source Plugin for ad hoc metric exploration.</p>
-              </div>
-            </div>  
-          </div>
-
-          <div class="event">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="event-img"><a href="http://monitorama.com/"><img src="/img/monitorama.png" /></a></div>
-              </div>
-              <div class="col-md-8">
-                <p class="event-date"><span class="event-type">conference</span> Portland, OR | 6.27.16 - 6.29.16</p>
-                <h3><a href="http://monitorama.com/">Monitorama</a></h3>
-                <p><span class="text-light"><strong>Torkel Odegaard: Fall in Love with Graphs and Metrics Using Grafana.</strong></span> Torkel will be giving a talk and demo on many of the new features of Grafana 3.0 and how you can get the most out of your data. Get your tickets to Monitorama before they sell out! You can also jump on the waiting list after the event is sold out.</p>
-              </div>
-            </div>  
-          </div>
-        </div>
+  <br/>
+  <br/>
+  {{ partial "upcoming-events.html" . }} 
 </div>
 
 <!-- Footer
