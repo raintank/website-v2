@@ -64,6 +64,13 @@ title = "raintank"
     parent = "software"
 
 [[menu.main]]
+    name = "Graphite"
+    weight = -90    
+    identifier = "graphite"
+    url = "/graphite/"
+    parent = "software"    
+
+[[menu.main]]
     name = "resources"
     weight = -60    
     identifier = "resources"
