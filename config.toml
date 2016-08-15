@@ -16,8 +16,102 @@ title = "raintank"
     url = "http://grafana.net?utm_source=rt"
 
 [[menu.main]]
-    name = "about"
+    name = "Graphite"
+    weight = -110    
+    identifier = "graphite"
+    url = "/graphite/"
+
+[[menu.main]]
+    name = "about Graphite"
     weight = -110
+    identifier = "about-graphite"
+    url = "/graphite/"
+    parent = "graphite"
+
+[[menu.main]]
+    name = "roadmap"
+    weight = -110
+    identifier = "graphite-roadmap"
+    url = "/graphite/roadmap"
+    parent = "graphite"  
+
+[[menu.main]]
+    name = "hosted Graphite"
+    weight = -100
+    identifier = "hosted-graphite"
+    url = "/graphite/hosted-graphite"
+    parent = "graphite"  
+
+[[menu.main]]
+    name = "metrictank"
+    weight = -100    
+    identifier = "metrictank"
+    url = "/metrictank/"  
+
+[[menu.main]]
+    name = "about metrictank"
+    weight = -110
+    identifier = "about-metrictank"
+    url = "/metrictank/"
+    parent = "metrictank"
+
+[[menu.main]]
+    name = "architecture"
+    weight = -110
+    identifier = "architecture"
+    url = "/metrictank/architecture"
+    parent = "metrictank"  
+
+[[menu.main]]
+    name = "host your metrics"
+    weight = -100
+    identifier = "host-your-metrics"
+    url = "/graphite/hosted-graphite"
+    parent = "metrictank"  
+
+[[menu.main]]
+    name = "software"
+    weight = -100
+    identifier = "software"
+    url = "/software/"
+
+[[menu.main]]
+    name = "worldPing"
+    weight = -110
+    identifier = "worldping"
+    url = "http://worldping.raintank.io"
+    parent = "software"
+
+[[menu.main]]
+    name = "Grafana"
+    weight = -100    
+    identifier = "grafana"
+    url = "http://grafana.org"
+    parent = "software"
+
+[[menu.main]]
+    name = "resources"
+    weight = -80    
+    identifier = "resources"
+    url = "/resources/" 
+
+[[menu.main]]
+    name = "press"
+    weight = -60    
+    identifier = "press"
+    url = "/resources/press/"
+    parent = "resources"
+
+[[menu.main]]
+    name = "events"
+    weight = -60    
+    identifier = "events"
+    url = "/resources/events/"
+    parent = "resources"
+
+[[menu.main]]
+    name = "about"
+    weight = -60
     identifier = "about"
     url = "/about/"
 
@@ -41,60 +135,6 @@ title = "raintank"
     identifier = "join"
     url = "/about/join"
     parent = "about"
-
-
-[[menu.main]]
-    name = "software"
-    weight = -90
-    identifier = "software"
-    url = "/software/"
-
-[[menu.main]]
-    name = "worldPing"
-    weight = -110
-    identifier = "worldping"
-    url = "http://worldping.raintank.io"
-    parent = "software"
-
-[[menu.main]]
-    name = "Grafana"
-    weight = -100    
-    identifier = "grafana"
-    url = "http://grafana.org"
-    parent = "software"
-
-[[menu.main]]
-    name = "Graphite"
-    weight = -90    
-    identifier = "graphite"
-    url = "/graphite/"
-    parent = "software"    
-[[menu.main]]
-    name = "metrictank"
-    weight = -90    
-    identifier = "metrictank"
-    url = "/metrictank/"
-    parent = "software"      
-
-[[menu.main]]
-    name = "resources"
-    weight = -60    
-    identifier = "resources"
-    url = "/resources/" 
-
-[[menu.main]]
-    name = "press"
-    weight = -60    
-    identifier = "press"
-    url = "/resources/press/"
-    parent = "resources"
-
-[[menu.main]]
-    name = "events"
-    weight = -60    
-    identifier = "events"
-    url = "/resources/events/"
-    parent = "resources"
 
 [[menu.main]]
     name = "blog"

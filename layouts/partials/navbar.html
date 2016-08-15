@@ -25,6 +25,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<a class="navbar-brand" href="/"><i class="main-logo icon-rt-raintank_wordmark"></i></a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
+
+					<div class="navbar-social">
+			        	<div class=" navbar-github">
+					       <a href="http://github.com/raintank" data-gacategory="Social" data-gaaction="Github" data-galabel="Navbar" alt="Follow us on Github" title="Follow us on Github"><img src="/img/github-icon.svg" /></a>
+					 	</div>
+					 	<div class="navbar-twitter">
+						   <a href="http://twitter.com/raintanksaas" data-gacategory="Social" data-gaaction="Twitter" data-galabel="Navbar" alt="Follow us on Twitter" title="Follow us on Twitter"><img src="/img/twitter-icon.svg" /></a>
+					 	</div>
+					</div>
+
 					<ul class="nav navbar-nav navbar-right">
 			          {{ $currentNode := . }}
 			          {{ range .Site.Menus.main }}
@@ -46,12 +56,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			           </li>
 			          {{end}}
 			          {{end}}
-			           <li class="navbar-social">
-					       <a href="http://github.com/raintank" data-gacategory="Social" data-gaaction="Github" data-galabel="Navbar" alt="Follow us on Github" title="Follow us on Github"><img src="/img/github-icon.svg" /></a>
-					   </li>
-					   <li class="navbar-social">
-						   <a href="http://twitter.com/raintanksaas" data-gacategory="Social" data-gaaction="Twitter" data-galabel="Navbar" alt="Follow us on Twitter" title="Follow us on Twitter"><img src="/img/twitter-icon.svg" /></a>
-					   </li>
+			          </ul>
 			        </ul>
 			       
 					<!-- <div class="nav-btn"><a class="navbar-right signInCTA" href="http://app.raintank.io">Sign In</a></div>

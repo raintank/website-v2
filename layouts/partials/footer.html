@@ -3,7 +3,7 @@
   <div class="footer-content-container">
    <hr class="section-divider" /><br/>
     <div class="row">
-      <div class="col-xs-9">
+      <div class="col-md-12">
         <ul class="footer-nav">
           {{ $currentNode := . }}
           {{ range .Site.Menus.main }}
@@ -27,22 +27,17 @@
           {{end}}
         </ul>
       </div>
-      <div class="col-xs-3">
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
         <div class="row">
           <div class="col-xs-12 col-md-12">
-            <ul class="text-right">
-              <li class="footer-social">
-                  <a href="http://github.com/raintank" data-gacategory="Social" data-gaaction="Github" data-galabel="Footer" alt="Follow us on Github" title="Follow us on Github"><img src="/img/github-icon.svg" /></a>
-              </li>
-              <li class="footer-social">
-                <a href="http://twitter.com/raintanksaas" data-gacategory="Social" data-gaaction="Twitter" data-galabel="Footer" alt="Follow us on Twitter" title="Follow us on Twitter"><img src="/img/twitter-icon.svg" /></a>
-              </li>              
-            </ul>
-            <ul class="text-right">
+            <ul class="">
               <li><span class="title">e:</span> <a href="mailto:hello@raintank.io" class="contact">hello@raintank.io</a></li>
               <li><span class="title">p:</span> 212.812.4179</li>
             </ul>
-            <ul class="text-right text-muted">
+            <ul class="text-muted">
               <li>29 broadway</li>
               <li>penthouse</li>
               <li>new york, ny 10006</li>
@@ -53,7 +48,15 @@
     </div>
 
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 text-center">
+         <ul class="">
+              <li class="footer-social">
+                  <a href="http://github.com/raintank" data-gacategory="Social" data-gaaction="Github" data-galabel="Footer" alt="Follow us on Github" title="Follow us on Github"><img src="/img/github-icon.svg" /></a>
+              </li>
+              <li class="footer-social">
+                <a href="http://twitter.com/raintanksaas" data-gacategory="Social" data-gaaction="Twitter" data-galabel="Footer" alt="Follow us on Twitter" title="Follow us on Twitter"><img src="/img/twitter-icon.svg" /></a>
+              </li>              
+            </ul>
         <p>&copy; 2016 raintank inc.</p>
       </div>
     </div>
