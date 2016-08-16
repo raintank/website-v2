@@ -1,0 +1,101 @@
++++
+title       = "Graphite"
+description = "How raintank is supporting the Graphite project"
++++
+
+<!-- Hero
+================================================== -->
+  <section class="hero home-hero">
+    <div class=" hero-content-container inner">
+      <div class="hero-caption">
+      <h1>raintank is fully behind Graphite.</h1>
+      </div>
+    </div>
+  </section>
+
+<div class="page-nav-container">
+  <ul class="page-nav">
+      <li><a class="" href="/graphite/">about Graphite</a></li>
+      <li><a class="active" href="/graphite/roadmap">roadmap</a></li>
+      <li><a class="" href="/graphite/hosted-graphite">hosted Graphite</a></li>
+  </ul>
+</div>  
+
+<!-- Main page content and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<div class="main-content-container">
+  <div class="page">
+    <!-- START THE FEATURETTES -->
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-center beta-heading text-primary">We are investing heavily in the Graphite open source project, and are committed to its continued success.</h3>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6"> 
+        <h4 class="text-light">1.0 Roadmap</h4>
+        <h5 class="text-light"><strong>Improved User Experience</strong></h5>
+        <p>Questions like <em>"how will this affect the user"</em> and <em>"how can I remove this source of friction"</em> are considered in every feature decision.</p>
+        
+        <h5 class="text-light"><strong>Storage Finders</strong></h5>
+        <p>This feature allows developers to build custom backends (or refit existing ones) for the Graphite API, making it possible to swap out your aging Whisper cluster for something more suited to your specific needs or operational expertise.</p>
+      
+        <h5 class="text-light"><strong>Streamlining Installation and Setup</strong></h5>
+        <p>The <a href="http://graphiteapp.org/quick-start-guides/synthesize.html">Synthesize project</a> is available to help anyone get a Graphite sandbox up and running in no time. It supports Vagrant for launching either Graphite stable (0.9.x) or experimental (pre-1.0) releases, or even a DigitalOcean button for launching your own stable Graphite droplet in minutes.</p>
+
+        <h5 class="text-light"><strong>Increased Cadence of Work</strong></h5>
+        <p>The health of any open source project is measured by its community, and you need a reliable cadence of work to maintain interest and contributions. The volume of contributions, issues, and community conversations around Graphite use and development has risen steadily over the last few months and will continue to do so.</p>
+        <br />
+      </div>
+      <div class="col-md-6">   
+        <h4 class="text-light">1.1 Roadmap</h4>
+        <h5 class="text-light"><strong>PRs and Issues</strong></h5>
+        <p>Clearing out the backlog of PRs and issues will allow us to focus on new innovations for Graphite after version 1.0. 
+        
+        <h5 class="text-light"><strong>Core Enhancements</strong></h5>
+        It's always been our intent (speaking vaguely on behalf of the Graphite core team) to introduce new storage backends, "pluggable" (read: user-defined) functions, access controls, etc., and with the glut of old contributions finally merged we can finally invest time towards these features.</p>
+
+        <h5 class="text-light"><strong>Support</strong></h5>
+        <p>Documentation, installation processes, and troubleshooting primitives will continue to advance. It's important to completely understand the various log messages, their meaning, their inconsistent use across classes and services, and being able to toggle them on or off according to need.</p>
+
+        <a href="http://graphiteapp.org" data-gacategory="Button" data-gaaction="Graphite site" data-galabel="Graphite Page" class="small specialCTA" style="margin-bottom:20px; margin-top:20px;">visit the new Graphite website</a>
+        <a href="https://github.com/graphite-project/graphite-web/issues?q=is%3Aopen+is%3Aissue+milestone%3A1.0.0" data-gacategory="Button" data-gaaction="Open Issues 1.0" data-galabel="Graphite Page" class="small specialCTA" style="margin-bottom:20px; margin-top:20px;">check out open issues for 1.0</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <br />
+      <div class="col-md-6">
+        <h3 class="text-light">Our future vision for Graphite</h3>
+        <p>Getting Graphite 1.x on track is just the beginning. We’re thinking bigger, and more long term.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="lead">We want to make key improvements to Graphite in the following areas:</p>
+        <h4 class="text-light">Performance</h4>
+        <p>The volume and velocity of todays metrics require the utmost in performance and scalability.</p>
+        <br />
+        <h4 class="text-light">Tagging</h4>
+        <p>Rich insights require rich metadata. Metrics should be more structured, standardized, and self describing. (See <a href="http://www.metrics20.org">http://www.metrics20.org</a>)</p>
+        <br />
+        <h4 class="text-light">Ease of Operation</h4>
+        <p>Graphite should be easier to install and scale, both for the very small users as well as the massively large.</p>
+        <p>Talk, unlike code, is cheap. Over the last several months, we’ve taken the first steps in addressing some of these problems: metrictank and carbon-relay-ng.</p>
+
+        <a href="#metrictank" data-gacategory="Button" data-gaaction="Graphite site" data-galabel="Graphite Page" class="small specialCTA" style="margin-bottom:20px;">more about metrictank</a>
+        <a href="https://github.com/raintank/carbon-relay-ng" data-gacategory="Button" data-gaaction="Open Issues 1.0" data-galabel="Graphite Page" class="small specialCTA" style="margin-bottom:20px;">more about carbon-relay-ng</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center" style="margin-top:40px;">
+      <h3>We're creating a new and modern Graphite-compatible stack for large environments. <span class="text-light">Introducing metrictank</span>.</h3>
+      <br />
+       <a href="/metrictank" data-gacategory="Button" data-gaaction="Graphite support" data-galabel="Graphite Page" class="primaryAltCTA" style="margin-bottom:40px;">learn about metrictank</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
