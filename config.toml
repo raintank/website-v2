@@ -42,32 +42,32 @@ title = "raintank"
     url = "/graphite/hosted-graphite"
     parent = "graphite"  
 
-[[menu.main]]
-    name = "metrictank"
-    weight = -100    
-    identifier = "metrictank"
-    url = "/metrictank/"  
+# [[menu.main]]
+#    name = "metrictank"
+#    weight = -100    
+#    identifier = "metrictank"
+#    url = "/metrictank/"  
 
-[[menu.main]]
-    name = "about metrictank"
-    weight = -110
-    identifier = "about-metrictank"
-    url = "/metrictank/"
-    parent = "metrictank"
+# [[menu.main]]
+#    name = "about metrictank"
+#    weight = -110
+#    identifier = "about-metrictank"
+#    url = "/metrictank/"
+#    parent = "metrictank"
 
-[[menu.main]]
-    name = "architecture"
-    weight = -110
-    identifier = "architecture"
-    url = "/metrictank/architecture"
-    parent = "metrictank"  
+# [[menu.main]]
+#    name = "architecture"
+#    weight = -110
+#    identifier = "architecture"
+#    url = "/metrictank/architecture"
+#    parent = "metrictank"  
 
-[[menu.main]]
-    name = "host your metrics"
-    weight = -100
-    identifier = "host-your-metrics"
-    url = "/graphite/hosted-graphite"
-    parent = "metrictank"  
+# [[menu.main]]
+#    name = "host your metrics"
+#    weight = -100
+#    identifier = "host-your-metrics"
+#    url = "/graphite/hosted-graphite"
+#    parent = "metrictank"  
 
 [[menu.main]]
     name = "software"
