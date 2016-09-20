@@ -1,0 +1,140 @@
++++
+title       = "GrafanaCon 2016"
+description = "Call for Participation Now Open"
++++
+
+<style>
+.cfp span.special {
+  font-size: inherit;
+  font-style: italic;
+  color: rgb(220, 220, 220);
+}
+
+.cfp ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.cfp ::-moz-placeholder {
+  color: rgb(220, 220, 220);
+}
+.form-container {
+  width: 100%;
+  max-width: 600px;
+
+}
+label {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+input {
+  display: block;
+  width: 100%;
+  height: 2.0em;
+  font-size: 0.8em;
+  padding: 0 10px;
+  background-color: rgba(255,255,255, 0.2);
+  border: 2px solid #fff; 
+  margin-bottom: 20px;
+}
+
+select {
+  height: 2.0em;
+}
+textarea, select {
+  width: 100%;
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  border: 2px solid #fff;
+  margin-bottom: 20px;
+}
+</style>
+
+<script>
+$('.cfp .signup form').on('click', 'a', formHandler('https://grafanacon-2016.herokuapp.com/abstracts/new'));
+
+// boilerplate form handler
+var formHandler = function (url) {
+  return function () {
+    var data = {};
+    var parent = $(this).parent();
+    var inputs = parent.find('.form-input');
+    for (var i=0; i<inputs.length; i++) {
+      data[inputs[i].name] = inputs[i].value;
+    }
+    var thanks = function (response) {
+      parent.parent().parent().find('p, form').css('display', 'none')
+      parent.parent().removeClass('text-left').addClass('text-center');
+      parent.parent().append('<span class="success">Thanks for your submission!</span>');
+    }
+    $.post(url, data, thanks).fail(thanks);
+    return false;
+  }
+}
+</script>
+
+<!-- Hero
+================================================== -->
+  <section class="hero home-hero">
+    <div class=" hero-content-container inner">
+      <div class="hero-caption">
+      <h1 >GrafanaCon 2016 CFP Now Open</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main page content and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+  <div class="main-content-container">
+    <div class="page">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-light">Interested in speaking at GrafanaCon 2016? We're looking for 45-minute talks for our single-track sessions and 5-minute general lightning talks.</h3>
+          <br/>
+          <p class="lead">We'll continue to accept submissions until 00:00 UTC Oct 21 2016 / 19:00 EST Oct 20 2016 / 16:00 PST Oct 20, 2016 . We'll select proposals by Nov 1, 2016 and notify the submitters. Speakers of accepted session talks will receive free registration to the event. You may submit as many proposals as you'd like.</p>
+                     
+          <section class="cfp">
+            <div class="signup text-left">		
+              <p>All fields with an (<span class="required">*</span>) asterisk are required. We don't require your <strong>Twitter</strong> or <strong>GitHub</strong> handles, but we'd love to include them on your badge.</p>		
+              
+              <form role="form">
+                <div class="form-group">
+                  <label for="full_name"><span class="required">&#42;</span> Name:</label>
+                  <input type="text" class="form-control form-input" name="full_name" placeholder="Jane Doe"></input>
+                </div>
+                <div class="form-group">
+                  <label for="email"><span class="required">&#42;</span> Email:</label>
+                  <input type="email" class="form-control form-input" name="email" placeholder="jane@doe.com"></input>
+                </div>
+                <div class="form-group">
+                  <label for="twitter">Twitter (&#64;handle):</label>
+                  <input type="text" class="form-control form-input" name="twitter" placeholder="@twitter"></input>
+                </div>
+                <div class="form-group">
+                  <label for="github">GitHub (username):</label>
+                  <input type="text" class="form-control form-input" name="github" placeholder="hubber123"></input>
+                </div>
+                <div class="form-group">
+                  <label for="type"><span class="required">&#42;</span> Type:</label>
+                  <select class="form-control form-input" name="type">
+                    <option value="workshop">Workshop (45 minutes)</option>
+                    <option value="lightning">Lightning Talk (5 minutes)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="title"><span class="required">&#42;</span> Title:</label>
+                  <input type="text" class="form-control form-input" name="title" placeholder="Our Exciting Monitoring Story"></input>
+                </div>
+                <div class="form-group">
+                  <label for="body"><span class="required">&#42;</span> Abstract:</label>
+                  <textarea class="form-control form-input" name="body" rows="10" placeholder="A paragraph or two explaining your proposed talk. We'll be in touch if we have questions."></textarea>
+                </div>
+                <a class="btn btn-primary" href="#">Submit</a>
+            </form>
+        </div>	
+      </section>      
+    </div>
+  </div><!-- /.page -->
+</div>
+   
