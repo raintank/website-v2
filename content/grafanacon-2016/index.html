@@ -51,8 +51,6 @@ textarea, select {
 </style>
 
 <script>
-$('.cfp .signup form').on('click', 'a', formHandler('https://grafanacon-2016.herokuapp.com/abstracts/new'));
-
 // boilerplate form handler
 var formHandler = function (url) {
   return function () {
@@ -71,6 +69,7 @@ var formHandler = function (url) {
     return false;
   }
 }
+$('.cfp .signup form').on('click', 'a', formHandler('https://grafanacon-2016.herokuapp.com/abstracts/new'));
 </script>
 
 <!-- Hero
