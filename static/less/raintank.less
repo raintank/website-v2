@@ -23,7 +23,7 @@
   transition: 0.15s;
   text-align: center;
 
-  // For light backgrounds. 
+  // For light backgrounds.
   &:hover,
   &:active {
     border: 1px solid @highlight;
@@ -36,7 +36,7 @@
 // Raintank CTAs
 // ====================================
 
-.signUpCTA, 
+.signUpCTA,
 .signUpCTA:visited{
   width:100px;
   .ButtonCTA(@primaryCTA, @primaryCTA, @white, @white);
@@ -59,7 +59,7 @@
 .heroCTA:visited{
 
   .ButtonCTA(@primaryCTA, @primaryCTA, @white, @white);
-  
+
   &:hover,
   &:active {
    background-color: darken(@primaryCTA, 10%);
@@ -86,7 +86,7 @@
 }
 
 
-.primaryAltCTA, 
+.primaryAltCTA,
 .primaryAltCTA:visited{
   .ButtonCTA(@primaryCTA, @primaryCTA, @white, @white);
 
@@ -103,7 +103,7 @@
   .ButtonCTA(transparent, @gray-light, @gray-light, @black);
 }
 
-.lightCTA, 
+.lightCTA,
 .lightCTA:visited{
   .ButtonCTA(transparent, @white, @white, @white);
 
@@ -115,7 +115,7 @@
   }
 }
 
-.specialCTA, 
+.specialCTA,
 .specialCTA:visited{
   .ButtonCTA(transparent, @primaryCTA, @primaryCTA, @white);
 
@@ -127,7 +127,7 @@
   }
 }
 
-.usecase, 
+.usecase,
 .usecase:visited {
   .ButtonCTA(transparent, @white, @white, @white);
     & i.secondary-icon, h3, h4 {color:@brand-primary;}
@@ -266,6 +266,11 @@
 .navbar-nav > li > a {
   text-shadow: 0 1px 0 rgba(255,255,255,.25);
   font-weight:  @navbar-inverse-link-weight;
+}
+
+.navbar-logo {
+  width: 225px;
+  margin-top: -5px;
 }
 
 // Inverted navbar
