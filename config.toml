@@ -22,7 +22,7 @@ title = "raintank"
     url = "/about/"
 
 [[menu.main]]
-    name = "the raintank vision"
+    name = "the Grafana Labs vision"
     weight = -110
     identifier = "vision"
     url = "/about/"
@@ -30,14 +30,14 @@ title = "raintank"
 
 [[menu.main]]
     name = "about the team"
-    weight = -100    
+    weight = -100
     identifier = "team"
     url = "/about/team"
     parent = "about"
 
 [[menu.main]]
     name = "work with us"
-    weight = -90    
+    weight = -90
     identifier = "join"
     url = "/about/join"
     parent = "about"
@@ -58,27 +58,27 @@ title = "raintank"
 
 [[menu.main]]
     name = "Grafana"
-    weight = -100    
+    weight = -100
     identifier = "grafana"
     url = "http://grafana.org"
     parent = "software"
 
 [[menu.main]]
     name = "resources"
-    weight = -60    
+    weight = -60
     identifier = "resources"
-    url = "/resources/" 
+    url = "/resources/"
 
 [[menu.main]]
     name = "press"
-    weight = -60    
+    weight = -60
     identifier = "press"
     url = "/resources/press/"
     parent = "resources"
 
 [[menu.main]]
     name = "events"
-    weight = -60    
+    weight = -60
     identifier = "events"
     url = "/resources/events/"
     parent = "resources"
@@ -88,4 +88,3 @@ title = "raintank"
     weight = -50
     identifier = "blog"
     url = "http://blog.raintank.io"
-
